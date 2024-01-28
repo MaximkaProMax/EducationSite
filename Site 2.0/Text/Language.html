@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Тест по C#</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="/Design/StyleLang.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Тест по C#</h1>
+        <form id="quiz">
+            <h2 class="question">Вопрос 1</h2>
+            <p class="question-text">Что такое C#?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q1" value="a"><span class="answer-text">Язык программирования</span></li>
+                <li><input type="radio" name="q1" value="b"><span class="answer-text">База данных</span></li>
+                <li><input type="radio" name="q1" value="c"><span class="answer-text">Операционная система</span></li>
+            </ul>
+
+            <h2 class="question">Вопрос 2</h2>
+            <p class="question-text">Как объявить переменную в C#?</p>
+            <ul class="answers">
+                <li><input type="radio" name="q2" value="a"><span class="answer-text">var x = 5;</span></li>
+                <li><input type="radio" name="q2" value="b"><span class="answer-text">int x = 5;</span></li>
+                <li><input type="radio" name="q2" value="c"><span class="answer-text">string x = "5";</span></li>
+            </ul>
+
+            <input type="submit" value="Проверить ответы" class="submit-button">
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
