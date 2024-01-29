@@ -11,11 +11,52 @@
     <div class="container">
         <div class="nav">
             <img src="/Image/JoyStick.png" alt="Логотип" class="logo">
-            <ul>
-                <li><a href="#unity">Unity</a></li>
-                <li><a href="#github">GitHub</a></li>
-                <li><a href="#csharp">C#</a></li>
-            </ul>
+            <style>
+                /* Стиль для кнопки раскрывающегося списка */
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                /* Стиль для раскрывающегося списка */
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                /* Стиль для ссылок в раскрывающемся списке */
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                /* Стиль для ссылок при наведении курсора */
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+                /* Показать раскрывающийся список при наведении курсора на кнопку */
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            </style>
+
+            <div class="dropdown">
+                <span>Theme</span>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#unity">Unity</a></li>
+                        <li><a href="#github">GitHub</a></li>
+                        <li><a href="#csharp">C#</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="content">
             <div id="unity">
