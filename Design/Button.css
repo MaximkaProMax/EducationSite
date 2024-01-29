@@ -22,12 +22,14 @@
   /* Содержимое выпадающего списка (скрыто по умолчанию) */
   .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute; /* Изменено с static на absolute */
+    right: 0; /* Добавлено для выравнивания по правому краю */
+    background-color: #003746;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba (0, 0, 0, 0.2);
     z-index: 1;
   }
+  
   
   /* Ссылки внутри выпадающего списка */
   .dropdown-content a {
