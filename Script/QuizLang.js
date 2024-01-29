@@ -4,7 +4,8 @@ const resultsDiv = document.querySelector('#results');
 quizForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const answers = ['a', 'b'];
+    const answers = ['a', 'b', 'a', 'b', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'a', 'a', 'a', 'a'];
+
     let score = 0;
 
     for (let i = 1; i <= answers.length; i++) {
