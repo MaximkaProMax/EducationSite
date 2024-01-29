@@ -1,0 +1,70 @@
+/* Файл со стилями CSS */
+
+/* Задаем общие свойства для всего документа */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Задаем шрифт и цвет фона для всего тела документа */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Задаем стили для контейнера, в котором находится весь контент */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Задаем стили для заголовка первого уровня */
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Задаем стили для абзацев */
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Задаем стили для ссылки-кнопки */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Добавляем эффект наведения для ссылки-кнопки */
+.button:hover {
+    background-color: #00ccff;
+}
+
+/* Задаем стили для кода, который будет отображаться на черном фоне с белыми буквами */
+.code {
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    overflow-x: auto;
+}
