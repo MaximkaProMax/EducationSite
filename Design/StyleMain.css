@@ -29,12 +29,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, #007aff, #60c3ff);
+    background: linear-gradient(to right, #1c8aff, #60c2ffe5);
     height: 80px;
     margin: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 1px solid rgba(247, 247, 247, 0.808);
 }
 
 .nav ul {
@@ -53,7 +52,7 @@ body {
 }
 
 .nav ul li a:hover {
-    color: #ffcc00;
+    color: #424242;
 }
 
 .nav ul li a.active {
@@ -163,8 +162,8 @@ footer > p {
 .front-element {
     box-shadow: 0px 0px 15px 0 rgba(28, 28, 28, 0.13);
     border-radius: 10px;
-    border: 1px solid rgba(247, 247, 247, 0.808);
-    background: linear-gradient(to right, #007bff23, #60c2ff27);
+    border: 1px solid rgba(233, 233, 233, 0.808);
+    background: linear-gradient(to right, #007bff41, #60c2ff54);
     backdrop-filter: blur(3px);
     padding: 10px 20px;
     transition: 0.3s;
