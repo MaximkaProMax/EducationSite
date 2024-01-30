@@ -5,8 +5,13 @@
 }
 
 body {
+    background-color: rgb(255, 255, 255);
     font-family: Montserrat, sans-serif;
-    background-color: white;
+    background-image: url("/Image/pattern-dots-square-.png");
+    background-size: 30%;
+    background-image: 10%;
+    background-repeat: repeat;
+    display:grid;
 }
 
 .container {
@@ -29,6 +34,7 @@ body {
     margin: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: 1px solid rgba(247, 247, 247, 0.808);
 }
 
 .nav ul {
@@ -130,7 +136,7 @@ section.panel{
     width: auto;
     border-radius: 10px;
     margin: 0px;
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
   }
   
@@ -152,6 +158,20 @@ footer > p {
     text-align: center;
 }
 
+/* Эффект матового стекла*/
+  
+.front-element {
+    box-shadow: 0px 0px 15px 0 rgba(28, 28, 28, 0.13);
+    border-radius: 10px;
+    border: 1px solid rgba(247, 247, 247, 0.808);
+    background: linear-gradient(to right, #007bff23, #60c2ff27);
+    backdrop-filter: blur(3px);
+    padding: 10px 20px;
+    transition: 0.3s;
+    width: auto;
+    display: block;
+  }
+
 /* Внизу описаны классы для элементов списка */
 
   .rounded {
@@ -166,11 +186,13 @@ footer > p {
     display: block;
     padding: .4em .4em .4em 2em;
     margin: .5em 0;
-    background: #DAD2CA;
+    background: linear-gradient(to right, #007bff11, #60c2ff0c);
+    border: 1px solid rgba(255, 255, 255, 0.747);
     color: #444;
     text-decoration: none;
     border-radius: .3em;
     transition: .3s ease-out;
+    backdrop-filter: blur(3px);
     }
     .rounded a:hover {background: #E9E4E0;}
     .rounded a:hover:before {transform: rotate(360deg);}
@@ -181,7 +203,7 @@ footer > p {
     left: -1.3em;
     top: 50%;
     margin-top: -1.3em;
-    background: #8FD4C1;
+    background: #b0dcff;
     height: 2em;
     width: 2em;
     line-height: 2em;
