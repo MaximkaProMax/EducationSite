@@ -20,6 +20,12 @@
     position: relative;
     display: inline-block;
   }
+
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
   
   /* Содержимое выпадающего списка (скрыто по умолчанию) */
   .dropdown-content {
@@ -29,7 +35,7 @@
     background-color: #0037465b;
     min-width: 16px;
     margin: 0 10px 0 0;
-    box-shadow: 0px 0px 15px 0 rgba(28, 28, 28, 0.2);
+    box-shadow: 0px 0px 5px 0 rgba(28, 28, 28, 0.2);
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.212);
