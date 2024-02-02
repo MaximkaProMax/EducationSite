@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url('cursor.png'), pointer;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
     background-image: 10%;
     background-repeat: repeat;
     display:grid;
-    cursor: url('cursor.cur');
 }
 
 .container {
