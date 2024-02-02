@@ -163,7 +163,7 @@ footer > p {
     box-shadow: 0px 0px 15px 0 rgba(28, 28, 28, 0.13);
     border-radius: 10px;
     border: 1px solid rgba(233, 233, 233, 0.808);
-    background: linear-gradient(to right, #007bff41, #60c2ff54);
+    background: linear-gradient(to right, #007bff00, #60c2ff00);
     backdrop-filter: blur(3px);
     padding: 10px 20px;
     transition: 0.3s;
