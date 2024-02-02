@@ -12,6 +12,7 @@ body {
     background-image: 10%;
     background-repeat: repeat;
     display:grid;
+    cursor: url('cursor.cur');
 }
 
 .container {
