@@ -68,4 +68,3 @@ quizForm.addEventListener('submit', (event) => {
             setTimeout(() => modal.style.display = 'none', 500); // Удаляем окно после анимации
         }
     }
-
