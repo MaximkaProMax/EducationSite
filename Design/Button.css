@@ -52,7 +52,9 @@
   }
   
   /* Изменение цвета ссылок при наведении */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {
+    background-color: #ffffff57;
+  }
   
   /* Показать выпадающий список при клике на кнопку */
   .show {display: block;}

@@ -16,13 +16,14 @@ modal.style.transition = 'opacity 0.5s'; // Добавляем анимацию
 const modalContent = document.createElement('div');
 modalContent.style.backgroundColor = '#fefefe';
 modalContent.style.margin = '10% auto';
-modalContent.style.padding = '30px';
+modalContent.style.padding = '2vh';
 modalContent.style.border = '1px solid #888';
 modalContent.style.width = '30%';
 modalContent.style.height = '50%';
+modalContent.style.maxHeight = '50vh';
 modalContent.style.borderRadius = '20px'; // Добавляем закругление углов
 modalContent.style.textAlign = 'center'; // Центрируем текст
-modalContent.style.fontSize = '25px'; // Увеличиваем размер шрифта
+modalContent.style.fontSize = '3vh'; // Увеличиваем размер шрифта
 modalContent.style.fontFamily = "'Montserrat', sans-serif"; // Изменяем шрифт на Montserrat
 modalContent.style.boxShadow = '0 0px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)'; // Добавляем тень
 
@@ -51,7 +52,7 @@ quizForm.addEventListener('submit', (event) => {
     // Добавляем жирное выделение для "Поздравляем" и добавляем место для эмодзи конфети
     modalContent.innerHTML = `<br><strong>Поздравляем!</strong><br>
     <br>Вы набрали <strong> ${score} из ${answers.length} </strong> (${percentage}%) правильных ответов.<br>
-    <img src="TestImages/confetti_emoji.png" alt="Confetti emoji" style="width: 220px; height: 220px; margin-top: 50px;">`;
+    <img src="TestImages/confetti_emoji.png" alt="Тут картинка конфети" style="height: 20vh; max-height: 40vh; margin: 10%;">`;
     modal.style.display = 'block';
     setTimeout(() => modal.style.opacity = '1', 0); // Запускаем анимацию
 });
