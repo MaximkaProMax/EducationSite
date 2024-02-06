@@ -10,7 +10,7 @@
 /* Задаем шрифт и цвет фона для всего тела документа */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
 /* Задаем стили для контейнера, в котором находится весь контент */
@@ -55,16 +55,4 @@ p {
 /* Добавляем эффект наведения для ссылки-кнопки */
 .button:hover {
     background-color: #00ccff;
-}
-
-/* Задаем стили для кода, который будет отображаться на черном фоне с белыми буквами */
-.code {
-    display: block;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Courier New', monospace;
-    font-size: 16px;
-    padding: 10px;
-    margin: 10px;
-    overflow-x: auto;
 }

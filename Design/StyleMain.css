@@ -177,9 +177,24 @@ footer > p {
     border: none;
     border-radius: 15px;
     background-color: #000;
-    color: white;
+    color: white !important; /* Это изменит цвет текста кнопки */
     font-size: 20px;
     cursor: pointer;
+    text-decoration: none !important; /* Это уберет подчеркивание текста ссылки */
+}
+
+
+.progamasha-button {
+    display: inline-block;
+    margin: 0 0 20px 20px ;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffa500;
+    color: white !important; /* Это изменит цвет текста кнопки */
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none !important; /* Это уберет подчеркивание текста ссылки */
 }
 
 /* Эффект матового стекла*/
