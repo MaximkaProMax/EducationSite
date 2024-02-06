@@ -1,32 +1,92 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Как создать 3D гонки в Unity</title>
     <!-- Подключаем шрифт Montserrat с Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <!-- Подключаем файл со стилями CSS -->
     <link rel="stylesheet" href="/Design/ProgaMasha.css">
+    <link rel="stylesheet" href="/Design/Button.css">
+    <script src="/Script/Button.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>Как создать 2D платформер в Unity</h1>
-            <p>В этом курсе вы научитесь, как создать свою собственную 2D платформенную игру в Unity, одном из самых популярных и мощных движков для разработки игр. Вы узнаете, как создать уровни, управлять персонажем, добавить препятствия и физику, а также как сделать игру интересной и захватывающей.</p>
+        <div class="nav">
+            <img src="/Image/JoyStick2.png" alt="Логотип" class="logo">
+            <div class="dropdown">
+                <div class="dropdown">
+                    <button onclick="myFunction2()" class="dropbtn">Тесты</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                    <ul>
+                        <li><a href="/Page/GitHub.html">GitHub</a></li>
+                        <li><a href="/Page/Lang.html">C#</a></li>
+                        <li><a href="/Page/Unity.html">Unity</a></li>
+                    </ul>
+                    </div>
+                </div> 
+                <div class="dropdown">    
+                    <button onclick="myFunction()" class="dropbtn">Темы</button>
+                    <div id="myDropdown" class="dropdown-content">
+                    <ul>
+                        <li><a href="#id1">Тема 1</a></li>
+                        <li><a href="#id2">Тема 2</a></li>
+                        <li><a href="#id3">Тема 3</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <h1>Как создать 2D платформер в Unity</h1>
+                <p>В этом курсе вы научитесь, как создать свою собственную 2D платформенную игру в Unity, одном из самых популярных и мощных движков для разработки игр. Вы узнаете, как создать уровни, управлять персонажем, добавить препятствия и физику, а также как сделать игру интересной и захватывающей.</p>
 
-            <div style="display: flex; justify-content: center;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ВАШ_ID_ВИДЕО" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; style="border-radius: 10px;"></iframe>
+                <div style="display: flex; justify-content: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ВАШ_ID_ВИДЕО" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen; style="border-radius: 10px;"></iframe>
+                </div>
+                <br> <br>
+                
+
+                <p>Курс состоит из нескольких уроков, в каждом из которых вы будете изучать новые аспекты разработки игры. В конце каждого урока вы найдете задания, которые помогут вам закрепить полученные знания и практические навыки. Также вы сможете скачать исходный код и ресурсы, которые использовались в уроке.</p>
+                <p>Для прохождения курса вам понадобятся базовые знания программирования на C# и работы с Unity. Если вы новичок в этих областях, мы рекомендуем вам сначала пройти наши вводные курсы по C# и Unity, которые вы можете найти на нашем сайте.</p>
+                <p>Готовы начать? Тогда переходите к первому уроку, в котором мы расскажем вам, как создать и настроить проект в Unity.</p>
+
+                <button onclick="location.href='/Main.html'" type="button" class="back-button">
+                    Назад
+                </button>
             </div>
-            <br> <br>
+            <br>
             
+            <div class="card">
+                <h1>Создание проекта</h1>
+                <p> Чтобы создать новый проект 2D платформера в Unity, выполните следующие шаги </p> <h3> 1. Откройте Unity и выберите "Новый проект"</h3>
+                <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_1.png"  width="900vh" style="border-radius: 10px;">
+                </div>
 
-            <p>Курс состоит из нескольких уроков, в каждом из которых вы будете изучать новые аспекты разработки игры. В конце каждого урока вы найдете задания, которые помогут вам закрепить полученные знания и практические навыки. Также вы сможете скачать исходный код и ресурсы, которые использовались в уроке.</p>
-            <p>Для прохождения курса вам понадобятся базовые знания программирования на C# и работы с Unity. Если вы новичок в этих областях, мы рекомендуем вам сначала пройти наши вводные курсы по C# и Unity, которые вы можете найти на нашем сайте.</p>
-            <p>Готовы начать? Тогда переходите к первому уроку, в котором мы расскажем вам, как создать и настроить проект в Unity.</p>
+                <h3> 2.	Укажите название проекта, выберите путь для сохранения и выберите "2D" в качестве шаблона проекта</h3> <br>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_2.png"  width="900vh" style="border-radius: 10px;">
+                </div>
+                
+                <h3> 3.	Нажмите "Создать проект" и Unity создаст новый проект 2D платформера</h3> <br>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_3.png"  width="900vh" style="border-radius: 10px;">
+                </div>
 
-            <div style="display: flex; justify-content: center;">
-                <a href="/Main.html" class="button">На главную</a>
+                <p>Теперь у вас есть новый проект 2D платформера в Unity, готовый для разработки игры. Вы можете начать импортировать ресурсы, настраивать сцены, создавать игровые объекты и реализовывать необходимую логику для вашего платформера.</p>
+
             </div>
-            
+            <br>
+
+            <div class="card">
+                <h1> 2.	Импорт необходимых ресурсов (спрайты, анимации, звуки)</h1>
+            </div>
+        </div>
     </div>
 </body>
 </html>
