@@ -91,13 +91,25 @@
                 <p>Чтобы импортировать ресурсы, такие как спрайты и другие материалы, для создания 2D игры в Unity, выполните следующие шаги:</p>
                 <ol>
                     <li>В Unity откройте папку "Assets" в проекте.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_4.png"  width="300vh" style="border-radius: 10px;">
+                    </div>
                     <li>Создайте папку с именем "Sprites" или любым другим удобным вам именем для хранения спрайтов.</li>
                     <li>Перетащите спрайты, которые вы хотите импортировать, в созданную папку "Sprites".</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_5.png"  width="700vh" style="border-radius: 10px;">
+                    </div>
                     <li>Unity автоматически импортирует спрайты и создаст для них соответствующие текстуры.</li>
                     <li>Чтобы использовать спрайты в игре, вы можете создать игровые объекты, такие как персонажи или объекты окружения, и присвоить им соответствующие спрайты из импортированных ресурсов.</li>
                 </ol>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_6.png"  width="900vh" style="border-radius: 10px;">
+                </div>
                 <p>Помимо спрайтов, вы также можете импортировать другие ресурсы, такие как анимации, звуки или фоны, похожим образом. Создавайте папки для каждого типа ресурсов и перетаскивайте соответствующие файлы внутрь них.</p>
                 <p>Таким образом, импортирование ресурсов для создания 2D игры в Unity - это простой процесс, который позволяет вам добавлять и использовать различные элементы в вашей игре.</p>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_7.png"  width="400vh" style="border-radius: 10px;">
+                </div>
             </div>
             <br>
             
@@ -106,14 +118,29 @@
                 <p>Для настройки основной сцены и камеры в Unity в 2D, выполните следующие шаги:</p>
                 <ol>
                     <li>Создайте новую сцену в Unity, нажав правой кнопкой мыши в окне "Project" и выбрав "Create" -> "Scene".</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_8.png"  width="700vh" style="border-radius: 10px;">
+                    </div>
                     <li>Перетащите игровые объекты, такие как игрок, враги и платформы, из окна "Project" на сцену.</li>
-                    <li>Создайте пустой игровой объект, который будет служить контейнером для всех игровых объектов на сцене. Назовите его, например, "Gameplay".</li>
-                    <li>Установите позицию игрового объекта "Gameplay" в (0, 0, 0) и добавьте к нему компонент "Box Collider 2D" для обеспечения размеров сцены.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_9.png"  width="500vh" style="border-radius: 10px;">
+                    </div>
+                    <li>Создайте пустые игровые объекты, которые будут служить контейнером для таких игровых объектов на сцене: игрок, зданий фон, текстуры. Назовите его, например, "Player", «Background», «World».</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_10.png"  width="700vh" style="border-radius: 10px;">
+                    </div>
+                    <li>Добавьте к контейнерам компонент "Box Collider 2D" для обеспечения размеров сцены.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_11.png"  width="500vh" style="border-radius: 10px;">
+                    </div>
                     <li>Создайте пустой игровой объект, который будет служить контейнером для камеры. Назовите его, например, "Main Camera".</li>
-                    <li>Установите позицию игрового объекта "Main Camera" в (0, 0, -10), чтобы поместить камеру в центр сцены и установите размер "Orthographic Size" на ваше усмотрение.</li>
-                    <li>Добавьте камере компонент "Camera 2D" для настройки ее параметров, таких как размер "Orthographic Size" и дальность "Far Clipping Plane".</li>
-                    <li>Настройте параметры камеры, такие как "Clear Flags" (например, Solid Color или Skybox), "Background" (например, цвет или текстура фона) и другие необходимые параметры.</li>
-                    <li>Установите родительские отношения между игровым объектом "Main Camera" и "Gameplay", чтобы камера следовала за игровым объектом "Gameplay".</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_12.png"  width="700vh" style="border-radius: 10px;">
+                    </div>
+                    <li>В окне «Inspector» настройте камеру</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_13.png"  width="700vh" style="border-radius: 10px;">
+                    </div>
                     <li>Настройте другие параметры сцены, такие как освещение, эффекты и т. д., в соответствии с требованиями вашей игры.</li>
                 </ol>
                 <p>Это основные шаги для настройки основной сцены и камеры в Unity в 2D.</p>
@@ -127,16 +154,31 @@
                 <ol>
                     <li>Создайте пустой игровой объект в сцене Unity.</li>
                     <li>Добавьте компонент Sprite Renderer к игровому объекту, чтобы отображать спрайт игрока.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_14.png" width="700vh" style="border-radius: 10px;">
+                    </div>
                     <li>Добавьте компонент Rigidbody2D для обеспечения физической симуляции игрока.</li>
                     <li>Регулируйте параметры Rigidbody2D в соответствии с требованиями игры, такие как масса и сопротивление движению.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_15.1.png" width="900vh" style="border-radius: 10px;">
+                    </div>
                     <li>Добавьте компонент Collider2D, чтобы обнаруживать столкновения с другими объектами.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_15.png" width="900vh" style="border-radius: 10px;">
+                    </div>
                 </ol>
                 <h3>Создание платформы:</h3>
                 <ol>
                     <li>Создайте пустой игровой объект в сцене Unity.</li>
                     <li>Добавьте компонент Sprite Renderer к игровому объекту, чтобы отображать спрайт платформы.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_16.png" width="900vh" style="border-radius: 10px;">
+                    </div>
                     <li>Добавьте компонент Box Collider2D, чтобы обеспечить коллизии с игровыми объектами.</li>
                     <li>Регулируйте размер и положение Box Collider2D в соответствии с формой и положением платформы.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_17.png"  width="900vh" style="border-radius: 10px;">
+                    </div>
                 </ol> <br>
                 <p>После завершения этих шагов, вы сможете использовать созданные игровые объекты в своем 2D платформере на Unity.</p>
             </div>
@@ -144,17 +186,26 @@
             <div class="card">
                 <h1>5. Создание анимаций игрока</h1>
                 <p>Создайте спрайты для анимации игрока. Разделите каждое движение игрока на разные спрайты, такие как ходьба, прыжок, атака и т.д.</p>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_18.png" width="700vh" style="border-radius: 10px;">
+                </div>
                 <p>Для создания анимаций игрока в Unity, выполните следующие шаги:</p>
-                <ol>
-                    <li>В окне "Project" создайте папку с именем "Animations" или любым другим удобным вам именем для хранения анимаций.</li>
-                    <li>В окне "Project" создайте папку с именем "Animation Controllers" или любым другим удобным вам именем для хранения контроллеров анимации.</li>
-                    <li>В окне "Project" создайте контроллер анимации, нажав правой кнопкой мыши в папке "Animation Controllers" и выбрав "Create" -> "Animator Controller". Назовите его, например, "Player Controller".</li>
-                    <li>В окне "Project" создайте анимации, нажав правой кнопкой мыши в папке "Animations" и выбрав "Create" -> "Animation". Назовите их, например, "Player Walk", "Player Jump", "Player Attack" и т.д.</li>
-                    <li>Для каждой анимации выберите соответствующие спрайты из папки "Sprites" и перетащите их в окно "Animation". Регулируйте длительность и порядок кадров в соответствии с желаемым эффектом.</li>
-                    <li>В окне "Animator" откройте контроллер анимации "Player Controller" и добавьте созданные анимации в виде состояний. Создайте переходы между состояниями и установите условия для их активации, используя параметры, такие как "Speed", "Jump", "Attack" и т.д.</li>
-                    <li>Добавьте компонент Animator к игровому объекту игрока и присвойте ему контроллер анимации "Player Controller".</li>
-                </ol> <br>
-                <p>Это основные шаги для создания анимаций игрока в Unity. У вас должна получиться плавная и реалистичная анимация, которая добавит жизнь в вашу игру.</p>
+                <p>Создайте анимационный контроллер. В Unity перейдите в окно "Аниматор" и создайте новый контроллер. Затем добавьте в него состояния для каждой анимации игрока.</p>
+                <p>Настройте переходы между состояниями. Определите условия, при которых будет происходить переход от одной анимации к другой. Например, когда игрок начинает двигаться, переходите к анимации ходьбы.</p>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_19.png" width="700vh" style="border-radius: 10px;">
+                </div>
+                <p>Свяжите спрайты с анимационным контроллером. Выберите состояние анимации и добавьте соответствующий спрайт в окне "Sprite Renderer".</p>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_20.png" width="700vh" style="border-radius: 10px;">
+                </div>
+                <p>Настройте параметры анимации. Используйте окно "Аниматор" для регулировки скорости воспроизведения, петли анимации и других параметров.</p>
+                <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                    <img src="/Image/GuideImage_21.png" width="700vh" style="border-radius: 10px;">
+                </div>
+                <p>Программируйте управление анимацией в коде. Создайте скрипт в Unity, который будет управлять переключением анимаций в зависимости от действий игрока, таких как нажатие кнопок или столкновение с объектами.</p>
+                <p>Протестируйте анимацию. Запустите игру и убедитесь, что анимации игрока воспроизводятся правильно и соответствуют действиям игрока.</p>
+                <p>Это основные шаги для создания анимации игрока в Unity 2D. У вас должна получиться плавная и реалистичная анимация, которая добавит жизнь в вашу игру.</p>
             </div>
             <br>
 
@@ -163,8 +214,20 @@
                 <p>Для реализации движений игрока, включая управление с клавиатуры и от джойстика, необходимо выполнить следующие шаги:</p>
                 <ol>
                     <li>Настроить обработку ввода с клавиатуры, чтобы игрок мог управлять персонажем с помощью стрелочных клавиш или WASD.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_22.png" width="700vh" style="border-radius: 10px;">
+                    </div>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_23.png" width="700vh" style="border-radius: 10px;">
+                    </div>
                     <li>Разработать обработку ввода с джойстика, чтобы игрок мог использовать геймпад для управления персонажем. Необходимо определить кнопки и оси на джойстике, которые будут отвечать за движение персонажа.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_24.png" width="700vh" style="border-radius: 10px;">
+                    </div>
                     <li>Написать код, который будет обрабатывать ввод с клавиатуры и джойстика и передавать команды персонажу для выполнения соответствующих движений.</li>
+                    <div style="display: flex; justify-content: center; border-radius: 10px; margin-top: 20px; margin-bottom: 50px;">
+                        <img src="/Image/GuideImage_25.png" width="700vh" style="border-radius: 10px;">
+                    </div>
                     <li>Протестировать реализацию движений игрока, проверив, что персонаж правильно реагирует на ввод с клавиатуры и джойстика.</li>
                 </ol>
             </div>
