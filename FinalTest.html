@@ -6,6 +6,14 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <title>Экзамен</title>
     <style>
+        #timer {
+            font-size: 20px;
+            color: red;
+            display: flex;
+            justify-content: center;
+            padding: 10, 10, 10, 10;
+        }
+
         body {
             display: flex;
             flex-direction: column;
@@ -88,6 +96,10 @@
             color: rgb(0, 212, 0);
             display: none;
         }
+
+        #disabled {
+
+        }
     </style>
 </head>
 <body>
@@ -104,6 +116,7 @@
             </button>
             <p id="result"></p>
         </div>
+        <div id="timer">Оставшееся время:<span id="time">05:00</span></div>
     </div>
     <script>
         // Список вопросов и ответов
@@ -362,6 +375,30 @@
 
         // Отобразить первый вопрос при загрузке страницы
         displayQuestion();
+
+        // Timer
+        var time = 1 * 60;  // 45 minutes in seconds
+        var timerElement = document.getElementById('time');
+        var optionsElement = document.getElementById('options');
+
+        function updateTimer() {
+            var minutes = Math.floor(time / 60);
+            var seconds = time % 60;
+            timerElement.textContent = minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+            time--;
+            if (time < 0) {
+                // Time is up
+                alert('Время вышло!');
+                clearInterval(timerInterval);
+                // Disable answer options
+                var options = optionsElement.getElementsByTagName('li');
+                for (var i = 0; i < options.length; i++) {
+                    options[i].classList.add('disabled');
+                }
+            }
+        }
+
+        var timerInterval = setInterval(updateTimer, 1000);
     </script>
 </body>
 </html>
