@@ -70,6 +70,18 @@
             cursor: pointer;
         }
 
+        .back-button {
+            display: block;
+            margin: 0 auto 20px auto;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 15px;
+            background-color: #9e9e9e;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
         #result {
             font-size: 24px;
             font-weight: bold;
@@ -85,8 +97,11 @@
             <p id="question"></p>
             <ul id="options"></ul>
             <div id="button-container">
-                <button id="submit">Submit</button>
+                <button id="submit">Ответить</button>
             </div>
+            <button onclick="location.href='../Main.html'" type="button" class="back-button">
+                На главную
+            </button>
             <p id="result"></p>
         </div>
     </div>
@@ -259,6 +274,8 @@
                 answer: 0
             }
         ];
+
+        
 
         // Переменные для хранения текущего индекса вопроса, выбранного ответа и количества правильных ответов
         var currentQuestion = 0;
