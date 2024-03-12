@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <title>C#, Unity и GitHub Quiz</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            font-family: Montserrat, sans-serif;
+            padding: 20px 0; /*Добавляем отступы сверху и снизу*/
+            background-image: url("/Image/pattern-dots-square-.png");
+            background-size: 40vh;
+            background-image: 10%;
+            background-repeat: repeat;
         }
 
         #container {
-            width: 600px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
+            margin-top: 10vh;
+            box-shadow: 0px 0px 15px 0 rgba(28, 28, 28, 0.082);
+            transition: 0.3s;
+            width: 50%;
             border-radius: 10px;
+            padding: 10px 50px;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        #button-container {
+            display: flex;
+            justify-content: center;
         }
 
         h1 {
@@ -42,21 +60,20 @@
         }
 
         #submit {
-            display: block;
-            width: 100px;
-            height: 40px;
-            margin: 20px auto;
-            background-color: #333333;
-            color: white;
+            margin: 3vh 0 3vh 0;
+            padding: 15px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px;
+            background-color: #007aff;
+            color: white;
+            font-size: 20px;
             cursor: pointer;
         }
 
         #result {
             font-size: 24px;
             font-weight: bold;
-            color: green;
+            color: rgb(0, 212, 0);
             display: none;
         }
     </style>
@@ -67,7 +84,9 @@
         <div id="quiz">
             <p id="question"></p>
             <ul id="options"></ul>
-            <button id="submit">Submit</button>
+            <div id="button-container">
+                <button id="submit">Submit</button>
+            </div>
             <p id="result"></p>
         </div>
     </div>
