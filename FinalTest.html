@@ -6,6 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
     <title>Экзамен</title>
     <style>
+            * {
+        box-sizing: border-box;
+        cursor: url('cursor.png'), pointer;
+    }
+        
         #timer {
             font-size: 20px;
             color: red;
@@ -16,7 +21,6 @@
 
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: auto;
@@ -42,6 +46,7 @@
         #button-container {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         h1 {
@@ -51,7 +56,7 @@
 
         #question {
             font-size: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         #options {
@@ -60,35 +65,38 @@
         }
 
         #options li {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         #options li input {
             margin-right: 10px;
         }
 
-        #submit {
-            margin: 3vh 0 3vh 0;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 15px;
-            background-color: #007aff;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
+        .button-container { 
+            display: flex; 
+            justify-content: center;
+
         }
 
-        .back-button {
-            display: block;
-            margin: 0 auto 20px auto;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 15px;
-            background-color: #9e9e9e;
-            color: white;
-            font-size: 20px;
+        #submit, .back-button { 
+            padding: 15px 5vh; 
+            border: none; 
+            border-radius: 15px; 
+            font-size: 20px; 
             cursor: pointer;
+            margin: 2vh; 
         }
+
+        #submit { 
+            background-color: #007aff; 
+            color: white; 
+        }
+
+        .back-button { 
+            background-color: #9e9e9e; 
+            color: white; 
+        }
+
 
         #result {
             font-size: 24px;
@@ -108,15 +116,15 @@
         <div id="quiz">
             <p id="question"></p>
             <ul id="options"></ul>
-            <div id="button-container">
+            <div class="button-container">
                 <button id="submit">Ответить</button>
+                <button onclick="location.href='../Main.html'" type="button" class="back-button">На главную</button>
             </div>
-            <button onclick="location.href='../Main.html'" type="button" class="back-button">
-                На главную
-            </button>
             <p id="result"></p>
         </div>
-        <div id="timer">Оставшееся время:<span id="time">05:00</span></div>
+        <br>
+        <div id="timer"><span id="time">Оставшееся время...</span></div>
+        <br>
     </div>
     <script>
         // Список вопросов и ответов
@@ -377,14 +385,14 @@
         displayQuestion();
 
         // Timer
-        var time = 1 * 60;  // 45 minutes in seconds
+        var time = 10 * 600;  // 10 minutes in seconds
         var timerElement = document.getElementById('time');
         var optionsElement = document.getElementById('options');
 
         function updateTimer() {
-            var minutes = Math.floor(time / 60);
+            var minutes = Math.floor(time / 600);
             var seconds = time % 60;
-            timerElement.textContent = minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+            timerElement.textContent = "Оставшееся время: " + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
             time--;
             if (time < 0) {
                 // Time is up
